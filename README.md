@@ -24,32 +24,37 @@ Through BankAccounts example we are exploring different OOP topics like
   
 **Project Structure**
   There are total **four** classes described as below
-**   1. Account**
-        	**Responsibility: **
+  
+**1.Account**
+
+**Responsibility:**
 - Abstract Class (Base Class)
 - Two abstract methods: deposit and withdraw to perform banks basic operation
 - One variable required to maintain "balance" to retrive balance and print balance
 - printBalance method
   
   
-  **2. CurrentAccount extends Account**
-  **Responsibility:**
+**2.CurrentAccount extends Account**
+
+**Responsibility:**
   - Constructor to set initial balance of the user, we are keeping 500 min balance required
   - As it extending Account, we have to implementing deposit and withdraw methods
 -   If the user deposit > 100000 than throw exception of taking a permission from manager
   - if the user tries to withdraw money grater than existing amount, we have to throw an exception
 -   Also we are maintaing min 500 balance.
 
-**  3. SavingAccount extends Account**
-**  Responsibility:**
+**3. SavingAccount extends Account**
+
+**Responsibility:**
 -   Constructor to set initial balance of the user, we are keeping 500 min balance required
 -   As it extending Account, we have to implementing deposit and withdraw methods
 -   If the user deposit > 200000 than throw exception of taking a permission from manager
 -   if the user tries to withdraw money grater than existing amount, we have to throw an exception for that
 -   Also we are maintaing min 500 balance.
 
-**4. PremiumSavingAccount extends SavingAccount**
-  **Responsibility:**
+**4.PremiumSavingAccount extends SavingAccount**
+
+**Responsibility:**
 -   Inside constructor we have to call super(balance) as we have only parameteaized constructor
 -   If the user deposit > 500000 than throw exception of taking a permission from manager
 -   if the user tries to withdraw money grater than existing amount, we have to throw an exception for that
